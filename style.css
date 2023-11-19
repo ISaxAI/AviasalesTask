@@ -2,11 +2,13 @@
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+
 }
 header{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 body{
     background: #F3F7FA;
@@ -16,6 +18,8 @@ body{
     justify-content: space-around;
 }
 .filter {
+
+    padding: 10px;
     min-width: 232px;
     max-width: 232px;
     height: 252px;
@@ -24,7 +28,7 @@ body{
     flex-wrap: wrap;
     border-radius: 2%;
     background: #FFFFFF;
-
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .filter ul{
     display: flex;
@@ -40,7 +44,6 @@ body{
 
     list-style-type: none;
 }
-
 .filter  ul li:hover{
     content: '';
     transition:all .75s;
@@ -49,4 +52,24 @@ body{
 label::before{
     border: #9ABBCE 1px solid;
     border-radius: 2%;
+}
+.tab{
+    width: 502px;
+    height: 184px;
+    background: #FFFFFF;
+    display: flex;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+}
+.tab-header{
+    width: 462px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.price{
+    flex-grow: 2;
+    font-size: 24px;
+    color: #2196F3;
 }
