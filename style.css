@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    font-size:12px;
 
 }
 header{
@@ -12,10 +13,13 @@ header{
 }
 body{
     background: #F3F7FA;
+    min-width: 800px;
+    min-height: 1000px;
 }
 .content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
 }
 .filter {
 
@@ -28,7 +32,7 @@ body{
     flex-wrap: wrap;
     border-radius: 2%;
     background: #FFFFFF;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 20%);
 }
 .filter ul{
     display: flex;
@@ -41,7 +45,6 @@ body{
     align-items: center;
     height: 40px;
     width: 100%;
-
     list-style-type: none;
 }
 .filter  ul li:hover{
@@ -53,23 +56,51 @@ label::before{
     border: #9ABBCE 1px solid;
     border-radius: 2%;
 }
-.tab{
+.tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.ticket{
     width: 502px;
     height: 184px;
     background: #FFFFFF;
     display: flex;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 20%);
     border-radius: 2%;
 }
-.tab-header{
-    width: 462px;
-    height: 36px;
+.ticket-header{
+    min-width: 462px;
+    max-height: 36px;
+    padding-left: 16px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    align-content: center;
+
 }
 .price{
-    flex-grow: 2;
+    display: flex;
     font-size: 24px;
     color: #2196F3;
+}
+.way{
+    width: 462px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+
+}
+.route, .length, .stops{
+    width: 141px;
+    height: 39px;
+    font-size: 12px;
+}
+.ticket-text, .grey-ticket-text{
+    padding-top: 3px;
+}
+.grey-ticket-text{
+    color: #A0B0B9;
 }
